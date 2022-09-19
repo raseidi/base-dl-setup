@@ -5,7 +5,6 @@ import utils
 
 from data_setup import get_test_data
 
-from torch import nn
 from torch.optim import Adam
 from torch.nn import functional as F
 
@@ -29,8 +28,8 @@ def main(args):
     )
     utils.save_model(
         model=model,
-        target_dir="models",
-        model_name="05_going_modular_script_mode_tinyvgg_model.pth",
+        name=logger.config.experiment_name,
+        path=logger.config.out_dir,
     )
     logger.finish()
 

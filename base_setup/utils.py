@@ -1,6 +1,3 @@
-import argparse
-
-
 def get_args_parser(add_help=True):
     import argparse
 
@@ -112,5 +109,6 @@ def get_args_parser(add_help=True):
     )
     return parser
 
-def save_model():
+
+def save_model(model, name, path):
     pass

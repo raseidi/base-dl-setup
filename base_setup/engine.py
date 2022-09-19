@@ -1,6 +1,4 @@
 import torch
-import tqdm
-
 
 def train_step(model, data_loader, loss_fn, device, optimizer):
     model.train()
